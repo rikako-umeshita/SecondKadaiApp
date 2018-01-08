@@ -12,7 +12,9 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-  
+    
+  //受け取るための変数
+    var nameTextField:String = ""
     
     
     override func viewDidLoad() {
@@ -20,12 +22,10 @@ class ResultViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        //受け取りの文字の宣言
-
-        let result = UITextField.text
+        
         
         //label上に表示
-        label.text = "こんにちは、　\(result)さん"
+        label.text = "こんにちは、 \(nameTextField)さん"
     }
 
     override func didReceiveMemoryWarning() {
